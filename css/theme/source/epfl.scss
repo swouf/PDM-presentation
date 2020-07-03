@@ -1,0 +1,111 @@
+/**
+ * EPFL theme for reveal.js.
+ *
+ * By Jérémy Jayet
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+@import "../../timeline";
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 26px;
+$mainFont: Helvetica, sans-serif;
+$headingFont: Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2em;
+$heading2Size: 1.4em;
+$heading3Size: 1.1em;
+$heading4Size: 1.0em;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal .header {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 0.5em;
+  display: none;
+}
+.reveal .header p {
+    font-size: 18px;
+}
+
+.reveal p {
+    text-align: left;
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+  display: none;
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+.col p{
+    margin-right: 10pt;
+    margin-left: 10pt;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+	max-width: 100%;
+	max-height: 100%;
+    height: auto;
+}
+
+.reveal h1 {
+    width: 600px;
+    text-align: left;
+    color: white;
+    padding: 30px;
+    background-color: red;
+}
+.reveal h2 {
+    text-align: left;
+}
+
+.reveal .footer .slide_number{
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    background-color: red;
+}
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}

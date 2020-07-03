@@ -1,40 +1,345 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="css/theme/epfl.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <div class='header'>
+                <p><img height=16px src="./assets/EPFL_logo_header.png" alt="EPFL"/> - Nanolab</p>
+            </div>
+            <section class="title">
+                <h1>Carbon Nanotubes Based Supercapacitors for Autonomous IoT Sensing Nodes</h1>
+                <div class="container">
+                    <h3 class="col">Jérémy Jayet</h3>
+                    <div class="col">
+                        <h5>Supervisors:</h5>
+                        Dr. Clara Moldovan<br/>
+                        Dr. Francesco Bellando<br/><br/><br/>
+                        <h5>Professor:</h5>Adrian Ionescu
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Context of the project</h2>
+                <p data-markdown>
+                    Nowadays, there is an increasing need for electrical power storage options with a particular focus for environment friendly devices.
+                </p>
+                <p class="fragment">
+                    In parallel, increasing number of connected devices, especially smart sensors for the IoT. Maintenance of remote networks with high number of nodes is <span class="fragment highlight-current-red">difficult and costly</span> therefore <span class="fragment highlight-current-blue">long lifetime and autonomous operations are strongly desired.</span>
+                </p>
+                <div class="container">
+                    <img class="col fragment fade-right" width=800px src="./assets/power_storage_sol.png" alt="Blablabla"/>
+                    <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
+                        Supercapacitors are a promising option for various applications such as:
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                        + Energy buffer in electric vehicles
+                        + Energy source for smart sensors
+                        + Energy buffer and storage in smart grid systems
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                        <!-- Their very long lifetime makes them important candidates for devices for which maintenance is costly and environment-friendly appliances. -->
+                    </p>
+            </section>
+            <section>
+                <h2>Project goal</h2>
+                <p data-markdown>
+                    This work includes itself in an ambitious project aiming to develop a new generation of supercapacitors.
+                </p>
+                <p class="fragment fade-left">
+                The desired properties are:
+                    <ul class="fragment fade-left">
+                        <li class="fragment highlight-current-red">High energy density</li>
+                        <li class="fragment highlight-current-red">High power density</li>
+                        <li class="fragment highlight-current-red">Environment-friendly fabrication, in particular based on abundant and non-toxic materials</li>
+                        <li class="fragment highlight-current-red">Low-cost</li>
+                    </ul>
+                </p>
+                <p class="fragment fade-left">
+                    The application of these devices in <abbr title="Internet of Things">IoT</abbr> sensors  is investigated.
+                </p>
+                <aside class="notes">
+                    Challenges:<br/>
+                    - communicating with the different instruments<br/>
+                    - Manipulating huge amount of data<br/>
+                    - Synchronizing all the elements<br/>
+                </aside>
+            </section>
+            <section>
+                <h2>Plan of the project</h2>
+                <div class="flex-parent">
+                    <div class="input-flex-container">
+                        <div class="input active">
+                            <span data-year="February" data-info="Start"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="Feb-Mar" data-info="Litterature review"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="Feb" data-info="Characterization"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="March" data-info="Process development">
+                        </div>
+                        <div class="input">
+                            <span data-year="Mar-Apr" data-info="Harvesting platform investigation"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="Mar-Apr" data-info="Process flow proposition"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="May" data-info="Starting microfabrication"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="May" data-info="Harvesting platform characterization"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="June" data-info="Sensor node characterization"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="June" data-info="Report writing"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="Jun-Jul" data-info="Presentation preparation"></span>
+                        </div>
+                        <div class="input">
+                            <span data-year="July" data-info="Planning of the project"></span>
+                        </div>
+                    </div>
+                    <div class="description-flex-container">
+                        <p class="active">Starting of the project</p>
+                        <p>Review of the litterature on supercapacitors and carbon nanotubes growth.</p>
+                        <p>Characterization of the current samples. Electrical parameters of the Fe-Al2O3 stack are measured.</p>
+                        <p>Research and development of new processes of fabrication.</p>
+                        <p>Investigation of the harvesting platform and its properties.</p>
+                        <p>Different process flows are proposed.</p>
+                        <p>Francesco starts the microfabrication of the samples starts in the CMi cleanroom.</p>
+                        <p>Following different experiment design, the harvesting platform is characterized.</p>
+                        <p>The demonstration sensor node is characterized.</p>
+                        <p>The report is written.</p>
+                        <p>Presentation</p>
+                        <p>We start planning the next step of this project, based on this work.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section>
+                    <h2>Supercapacitors principle</h2>
+                    <h3>Electrical double layer capacitors</h3>
+                    <div class="container">
+                        <img class="col" width=800px src="./assets/EDLC-simplified-principle.png" alt="Blablabla"/>
+                        <div style="margin-left: 12pt;" class="col">
+
+                            <p data-markdown>
+                                Electrical double layer capacitors principle is based on non-Faradaic charge transfer.
+                            </p>
+                            \[
+                            C = \epsilon \frac{A}{d}
+                            \]
+                            <p data-markdown>
+                                They benefit from:
+                                + a large surface area (activated carbons, CNTs),
+                                + an extremely thin double-layer distance (few Å).
+                            </p>
+
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Supercapacitors principle</h2>
+                        <h3>Electrochemical pseudocapacitance</h3>
+                        <div class="container">
+                            <img class="col" width=800px src="./assets/Pseudocapacitance-Principle.png" alt="Blablabla"/>
+                            <p style="margin-left: 12pt;" class="col" data-markdown>
+                                Electrical energy stored through reversible Faradaic redox reactions.
+
+                                Magnitude of this effect exceed the effect of double layer capacitance (up to a factor 100 was reported).
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Supercapacitors properties</h2>
+                        <p data-markdown>
+                            Advantages:
+
+                            + Very high cycling stability and long lifetime (>10'000 cycles for most commercial devices).
+                            + High power density
+                            + Some devices are made with with environment-friendly materials
+
+                            Current issues:
+
+                            + Low voltage
+                            + Low energy density
+                            + Most devices use toxic electrolyte
+                        </p>
+                </section>
+            </section>
+            <section>
+                <h2>Carbon nanotubes supercapacitors</h2>
+                <img class="col" width=1200px src="./assets/cnts_supercap_principle.png" alt="Blablabla"/>
+                <p>
+                    Test
+                </p>
+            </section>
+            <section>
+                <h2>C</h2>
+                <p>
+                    Test
+                </p>
+            </section>
+            <section>
+                <section>
+                    <h2>Novel approach for carbon nanotubes based supercapacitors</h2>
+                    <p>
+                        Two major improvements are explored in this project:
+                    </p>
+                    <ul>
+                        <li class="fragment fade-left">Geometry optimization of the device</li>
+                        <li class="fragment fade-left">New fabrication processes with horizontal carbon nanotubes</li>
+                    </ul>
+                    <p class="fragment">
+                        
+                    </p>
+
+                </section>
+                <section>
+                <h2>Process 1</h2>
+
+                <div class="r-stack" width="800px">
+                    <img class="fragment fade-out" data-fragment-index="1" src="./assets/processC/1.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="1" src="./assets/processC/2.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="2" src="./assets/processC/3.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="3" src="./assets/processC/4.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="4" src="./assets/processC/5.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="5" src="./assets/processC/6.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="6" src="./assets/processC/7.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="7" src="./assets/processC/8.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="8" src="./assets/processC/9.png">
+                    <img class="fragment" data-fragment-index="9" src="./assets/processC/10.png">
+                </div>
+                <div class="r-stack">
+                    <p class="fragment fade-out" data-fragment-index="1">Substrate</p>
+                    <span class="fragment fade-left" data-fragment-index="1"><p class="fragment fade-out" data-fragment-index="2">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="2"><p class="fragment fade-out" data-fragment-index="3">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="3"><p class="fragment fade-out" data-fragment-index="4">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="4"><p class="fragment fade-out" data-fragment-index="5">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="5"><p class="fragment fade-out" data-fragment-index="6">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="6"><p class="fragment fade-out" data-fragment-index="7">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="7"><p class="fragment fade-out" data-fragment-index="8">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="8"><p class="fragment fade-out" data-fragment-index="9">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="9"><p class="fragment fade-out" data-fragment-index="10">Photoresist deposition</p></span>
+                </div>
+                <!--
+
+                <div class="animation-process">
+                    <div>
+                    <>
+                </div>
+
+            -->
+
+            </section>
+            <section>
+                <h2>Process 2</h2>
+
+                <div class="r-stack" width="800px">
+                    <img class="fragment fade-out" data-fragment-index="1" src="./assets/processB/01.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="1" src="./assets/processB/02.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="2" src="./assets/processB/03.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="3" src="./assets/processB/04.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="4" src="./assets/processB/05.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="5" src="./assets/processB/06.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="6" src="./assets/processB/07.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="7" src="./assets/processB/08.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="8" src="./assets/processB/09.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="9" src="./assets/processB/10.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="10" src="./assets/processB/11.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="11" src="./assets/processB/12.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="12" src="./assets/processB/13.png">
+                    <img class="fragment fade-in-then-out" data-fragment-index="13" src="./assets/processB/14.png">
+                    <img class="fragment" data-fragment-index="14" src="./assets/processB/15.png">
+                </div>
+                <div class="r-stack">
+                    <p class="fragment fade-out" data-fragment-index="1">Substrate</p>
+                    <span class="fragment fade-left" data-fragment-index="1"><p class="fragment fade-out" data-fragment-index="2">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="2"><p class="fragment fade-out" data-fragment-index="3">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="3"><p class="fragment fade-out" data-fragment-index="4">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="4"><p class="fragment fade-out" data-fragment-index="5">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="5"><p class="fragment fade-out" data-fragment-index="6">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="6"><p class="fragment fade-out" data-fragment-index="7">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="7"><p class="fragment fade-out" data-fragment-index="8">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="8"><p class="fragment fade-out" data-fragment-index="9">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="9"><p class="fragment fade-out" data-fragment-index="10">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="10"><p class="fragment fade-out" data-fragment-index="11">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="11"><p class="fragment fade-out" data-fragment-index="12">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="12"><p class="fragment fade-out" data-fragment-index="13">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="13"><p class="fragment fade-out" data-fragment-index="14">Photoresist deposition</p></span>
+                    <span class="fragment fade-left" data-fragment-index="14"><p class="fragment fade-out" data-fragment-index="15">Photoresist deposition</p></span>
+                </div>
+
+                <!--
+
+                <div class="animation-process">
+                    <div>
+                    <>
+                </div>
+
+            -->
+
+            </section>
+            <section>
+                <h2>Process 2</h2>
+            </section>
+        </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var inputs = $('.input');
+        var paras = $('.description-flex-container').find('p');
+        $(inputs).click(function(){
+            var t = $(this),
+            ind = t.index(),
+            matchedPara = $(paras).eq(ind);
+
+            $(t).add(matchedPara).addClass('active');
+            $(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
+        });
+    });
+    </script>
+
+    <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        math: {
+            mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+            // pass other options into `MathJax.Hub.Config()`
+            TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+    });
+    </script>
+</body>
 </html>
