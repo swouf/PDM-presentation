@@ -16,9 +16,11 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <div class='header'>
+            <!--
+            <div class="header">
                 <p><img height=10px src="./assets/EPFL_logo_header.png" alt="EPFL"/> - Nanolab</p>
             </div>
+        -->
             <section class="title">
                 <h1>Carbon Nanotubes Based Supercapacitors for Autonomous IoT Sensing Nodes</h1>
                 <div class="container">
@@ -34,22 +36,20 @@
             <section>
                 <h2>Context of the project</h2>
                 <p data-markdown>
-                    Nowadays, there is an increasing need for electrical power storage options with a particular focus for environment friendly devices.
+                    Nowadays, there is an increasing need for electrical power storage options with a particular focus on environment-friendly devices.
                 </p>
                 <p class="fragment">
-                    In parallel, increasing number of connected devices, especially smart sensors for the IoT. Maintenance of remote networks with high number of nodes is <span class="fragment highlight-current-red">difficult and costly</span> therefore <span class="fragment highlight-current-blue">long lifetime and autonomous operations are strongly desired.</span>
+                    In parallel, the number of connected devices increases, especially that of smart sensors for the IoT. Maintenance of remote networks with a high number of nodes is <span class="fragment highlight-current-red">difficult and costly</span> therefore <span class="fragment highlight-current-blue">long lifetime and autonomous operations are strongly desired.</span>
                 </p>
-                <div class="container">
-                    <img class="col fragment fade-right" width=800px src="./assets/power_storage_sol.png" alt="Blablabla"/>
+                    <img class="fragment fade-right" width=41% src="./assets/power_storage_sol.png" alt="Blablabla"/>
+                    <!--
                     <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
                         Supercapacitors are a promising option for various applications such as:
 
                         + Energy buffer in electric vehicles
                         + Energy source for smart sensors
                         + Energy buffer and storage in smart grid systems
-
-                        <!-- Their very long lifetime makes them important candidates for devices for which maintenance is costly and environment-friendly appliances. -->
-                    </p>
+                -->
                 </section>
                 <section>
                     <h2>Project goal</h2>
@@ -83,7 +83,7 @@
                                 <span data-year="February" data-info="Start"></span>
                             </div>
                             <div class="input">
-                                <span data-year="Feb-Mar" data-info="Litterature review"></span>
+                                <span data-year="Feb-Mar" data-info="Literature review"></span>
                             </div>
                             <div class="input">
                                 <span data-year="Feb" data-info="Characterization"></span>
@@ -98,7 +98,7 @@
                                     <span data-year="Mar-Apr" data-info="Process flow proposition"></span>
                                 </div>
                                 <div class="input">
-                                    <span data-year="May" data-info="Starting microfabrication"></span>
+                                    <span data-year="May" data-info="Beginning of microfabrication"></span>
                                 </div>
                                 <div class="input">
                                     <span data-year="May" data-info="Harvesting platform characterization"></span>
@@ -107,41 +107,167 @@
                                     <span data-year="June" data-info="Sensor node characterization"></span>
                                 </div>
                                 <div class="input">
-                                    <span data-year="June" data-info="Report writing"></span>
+                                    <span data-year="June" data-info="Report"></span>
                                 </div>
                                 <div class="input">
-                                    <span data-year="Jun-Jul" data-info="Presentation preparation"></span>
+                                    <span data-year="Jun-Jul" data-info="Presentation"></span>
                                 </div>
                                 <div class="input">
                                     <span data-year="July" data-info="Planning of the project"></span>
                                 </div>
                             </div>
                             <div class="description-flex-container">
-                                <p class="active">Starting of the project</p>
-                                <p>Review of the litterature on supercapacitors and carbon nanotubes growth.</p>
+                                <p class="active">Beginning of the project</p>
+                                <p>Review of the literature on supercapacitors and carbon nanotubes growth.</p>
                                 <p>Characterization of the current samples. Electrical parameters of the Fe-Al<sub>2</sub>O<sub>3</sub> stack are measured.</p>
                                 <p>Research and development of new processes of fabrication.</p>
                                 <p>Investigation of the harvesting platform and its properties.</p>
                                 <p>Different process flows are proposed.</p>
-                                <p>Francesco starts the microfabrication of the samples starts in the CMi cleanroom.</p>
-                                <p>Following different experiment design, the harvesting platform is characterized.</p>
+                                <p>Francesco starts the microfabrication of the samples in the CMi cleanroom.</p>
+                                <p>Following different experiment designs, the harvesting platform is characterized.</p>
                                 <p>The demonstration sensor node is characterized.</p>
-                                <p>The report is written.</p>
-                                <p>Presentation</p>
-                                <p>We start planning the next step of this project, based on this work.</p>
+                                <p></p>
+                                <p></p>
+                                <p>We start planning the next step of the project, based on this work.</p>
                             </div>
                         </div>
                     </section>
                     <section>
+                    <section>
+                        <h2>Autonomous IoT sensing nodes</h2>
+                        <h3>Energy harvesting</h3>
+                        <img width=60% src="./assets/power_consumption_scale.png" alt="Blablabla"/>
+                    </section>
+                    <section>
+                        <h2>Autonomous IoT sensing nodes</h2>
+                        <h3>Energy harvesting system</h3>
+                        <img src="./assets/generic_ehs_structure.png" alt="Blablabla"/>
+                        <p>This project is about designing the <strong>energy storage structure</strong> (in our case a supercapacitor).</p>
+                    </section>
+                    </section>
+                    <section>
                         <section>
-                            <h2>Supercapacitors principle</h2>
-                            <h3>Electrical double layer capacitors</h3>
+                            <h2>Framework for autonomous operations</h2>
+                            <p data-markdown>
+                                We need to describe the power production and consumption of an **energy harvesting system** and its load.
+
+                                The power produced by the energy harvesting system is defined as $P(t)$ and is a $(\rho,\sigma_1, \sigma_2)$ function.
+                            </p>
+                        </section>
+                        <section>
+                            <h2>Framework for autonomous operations</h2>
+                                <h3>$(\rho,\sigma_1, \sigma_2)$ function</h3>
+                                <p>
+                                    A nonnegative, continuous and bounded function $P(t)$ is said to be a $(\rho,\sigma_1, \sigma_2)$ function if, and only if, for any value of finite positive real numbers $\tau$ and $T$, the following conditions are satisfied:
+                                </p>
+                                \[
+                                \int_{\tau}^{\tau+T} {P(t)dt} \leq \rho T + \sigma_1
+                                \]
+                                \[
+                                \int_{\tau}^{\tau+T} {P(t)dt} \geq \rho T - \sigma_2
+                                \]
+                        </section>
+                        <section>
+                            <h2>Framework for autonomous operations</h2>
+                                <h3>Energy neutrality</h3>
+                                <p>
+                                    In a system where the energy production is characterized as a $(\rho_1,\sigma_1,\sigma_2)$ function, the load consumption is characterized by a $(\rho_2,\sigma_3)$ function and the energy buffer can be described with $\eta$ for the storage efficiency and $\rho_{leak}$ for the leakage power, the energy neutrality is met if the system respect the following conditions:
+                                </p>
+                                \[
+                                \rho_2 \leq  \eta\rho_1 -\rho_{leak}
+                                \]
+                                \[
+                                B_0 \geq \eta \sigma_2 + \sigma_3
+                                \]
+                                \[
+                                B \geq B_0
+                                \]
+                        </section>
+                        <section>
+                            <h2>Framework for autonomous operations</h2>
+                            <h3>Design of the supercapacitors</h3>
+                            <p>
+                                Energy in a capacitor:
+                            </p>
+                            \[
+                            E_C(V_C) = \frac{1}{2}C(V_C^2-V_{node,min}^2)
+                            \]
+                            <p>
+                                Capacitance required for energy neutrality:
+                            </p>
+                            \[
+                            C \geq \frac{2(\eta \sigma_2 + \sigma_3)}{V_{eh,max}^2-V_{node,min}^2}
+                            \]
+                        </section>
+                    </section>
+                    <section>
+                        <section>
+                        <h2>Experiment 1: Charging a capacitor</h2>
+                        <div class="container">
+                            <img class="col" src="./assets/charging_capacitor.png" alt="Blablabla"/>
+                            <p class="col">The power output was estimated by measuring the timing for charging a supercapacitor.</p>
+                        </div>
+                    </section>
+                    <section>
+                    <h2>Experiment 1: Charging a capacitor</h2>
+                    <h3>Results</h3>
+                    <div class="container">
+                        <img class="col" src="./assets/power_scenarios_load.png" alt="Blablabla"/>
+                        <p class="col" data-markdown>
+                            + Thermal power was evaluated with the **hot side of the TEG on the skin** and the cold side on the passive radiator.
+                            + In the outdoor scenario, measurements were made under direct sunlight.
+                            + In the indoor scenario, the solar cell was exposed to high artificial illumination.
+                        </p>
+                    </div>
+                    </section>
+                    </section>
+                    <section>
+                        <section>
+                        <h2>Experiment 2: Long-term monitoring of an energy harvester</h2>
+                        <div class="container">
+                            <img class="col" src="./assets/long_term_measurement.png" alt="Blablabla"/>
+                            <p class="col">
+                                In this experiment, power production is recorded over time. The voltage and the current are sampled with an Arduino Nano and data are recorded on a μSD card.
+
+                                Analysis of this signal was then conducted to characterize the power production.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                    <h2>Experiment 2: Long-term monitoring of an energy harvester</h2>
+                    <h3>Results of the outdoor scenario</h3>
+                        <img width=80% src="./assets/2020_06_04_1232_preprocessed_power.png" alt="Blablabla"/>
+                    </section>
+                    <section>
+                    <h2>Experiment 2: Long term monitoring of energy harvester</h2>
+                    <h3>Results of the outdoor scenario</h3>
+                    <div class="container">
+                        <p class="col" data-markdown>
+                            $\rho$ = 0.0289 mW
+                            $\sigma_1$ = 822.502 mJ
+                            $\sigma_2$ = 566.450 mJ
+                        </p>
+                        <p class="col">
+
+                        </p>
+                    </div>
+                    </section>
+                    <section>
+                    <h2>Experiment 2: Long-term monitoring of an energy harvester</h2>
+                    <h3>Results of the indoor scenario</h3>
+                        <img width=80% src="./assets/2020_06_15_2100_preprocessed_power.png" alt="Blablabla"/>
+                    </section>
+                    </section>
+                    <section>
+                        <section>
+                            <h2>Principle of supercapacitors</h2>
+                            <h3>Electrical double-layer capacitors</h3>
                             <div class="container">
                                 <img class="col" width=800px src="./assets/EDLC-simplified-principle.png" alt="Blablabla"/>
                                 <div style="margin-left: 12pt;" class="col">
 
                                     <p data-markdown>
-                                        Electrical double layer capacitors principle is based on non-Faradaic charge transfer.
+                                        Electrical double-layer capacitors principle is based on non-Faradaic charge transfer.
                                     </p>
                                     \[
                                     C = \epsilon \frac{A}{d}
@@ -155,25 +281,25 @@
                                 </div>
                             </section>
                             <section>
-                                <h2>Supercapacitors principle</h2>
+                                <h2>Principle of supercapacitors</h2>
                                 <h3>Electrochemical pseudocapacitance</h3>
                                 <div class="container">
                                     <img class="col" width=800px src="./assets/Pseudocapacitance-Principle.png" alt="Blablabla"/>
                                     <p style="margin-left: 12pt;" class="col" data-markdown>
-                                        Electrical energy stored through reversible Faradaic redox reactions.
+                                        Electrical energy is stored through reversible Faradaic redox reactions.
 
-                                        Magnitude of this effect exceed the effect of double layer capacitance (up to a factor 100 was reported).
+                                        Magnitude of this effect exceeds the effect of double-layer capacitance (up to a factor 100 was reported).
                                     </p>
                                 </div>
                             </section>
                             <section>
-                                <h2>Supercapacitors properties</h2>
+                                <h2>Properties of supercapacitors</h2>
                                 <p data-markdown>
                                     Advantages:
 
                                     + Very high cycling stability and long lifetime (>10'000 cycles for most commercial devices).
                                     + High power density
-                                    + Some devices are made with with environment-friendly materials
+                                    + Some devices are made with environment-friendly materials
 
                                     Current issues:
 
@@ -192,9 +318,6 @@
                                 <li class="fragment fade-left">Geometry optimization of the device</li>
                                 <li class="fragment fade-left">New fabrication processes with horizontal carbon nanotubes</li>
                             </ul>
-                            <p class="fragment">
-
-                            </p>
 
                         </section>
                         <section>
@@ -276,26 +399,19 @@
                         <h2>Process 2</h2>
                         <h3>Horizontal growth of CNTs on coated Si structures</h3>
 
-                        <div class="container">
-                            <img class="col fragment fade-right" width=800px src="./assets/sem_border_wafer.png" alt="Blablabla"/>
-                            <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
-                                During the growth of vertical CNTs, horizontal growth on the edge of the wafer occured. From this phenomenon, horizontal CNTs structures could be fabricated.
-                            </p>
-                        </div>
+                            <img width=70% src="./assets/sem_border_wafer.png" alt="Blablabla"/>
                     </section>
                     <section>
                         <h2>Process 2</h2>
                         <h3>Horizontal growth of CNTs on coated Si structures</h3>
 
                         <div class="container">
-                            <img class="col fragment fade-right" width=300px src="./assets/redeposition.png" alt="Blablabla"/>
+                            <img class="col fragment fade-right" width=250px src="./assets/redeposition.png" alt="Blablabla"/>
                             <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
                                 Coating of the horizontal surfaces could be achieved by two means with IBE:
 
                                 1. Fe layer is the top layer and this layer is removed with IBE
                                 1. Al<sub>2</sub>O<sub>3</sub>-Fe stack is etched with IBE and redeposits on the walls
-
-                                The process flow for this second option is shown on next slide.
                             </p>
                         </div>
                     </section>
@@ -381,14 +497,7 @@
     <section>
         <h2>Process 3</h2>
         <h3>Feasability assessment</h3>
-        <div class="container">
-            <div class="col">
-                <img class="fragment fade-right" width=200px src="./assets/cnt_flip_exp_pic.jpg" alt="Blablabla"/>
-            </div>
-            <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
-                Feasibility of bundle flipping was investigated.
-            </p>
-        </div>
+        <img width=200px src="./assets/cnt_flip_exp_pic.jpg" alt="Blablabla"/>
     </section>
     <section>
         <h2>Process 3</h2>
@@ -411,122 +520,7 @@
 -->
 <section>
 <section>
-    <h2>Autonomous IoT sensing nodes</h2>
-    <h3>Energy harvesting</h3>
-    <img width=60% src="./assets/power_consumption_scale.png" alt="Blablabla"/>
-</section>
-<section>
-    <h2>Autonomous IoT sensing nodes</h2>
-    <h3>Energy harvesting system</h3>
-    <img src="./assets/generic_ehs_structure.png" alt="Blablabla"/>
-    <p>This project is about designing the <strong>energy storage structure</strong> (in our case a supercapacitor).</p>
-</section>
-</section>
-<section>
-    <section>
-    <h2>Experiment 1: Charging capacitor</h2>
-    <div class="container">
-        <img class="col" src="./assets/charging_capacitor.png" alt="Blablabla"/>
-        <p class="col">The power output was estimated by measuring the timing for charging a supercapacitor.</p>
-    </div>
-</section>
-<section>
-<h2>Experiment 1: Charging capacitor</h2>
-<h3>Results</h3>
-<div class="container">
-    <img class="col" src="./assets/power_scenarios_load.png" alt="Blablabla"/>
-    <p class="col" data-markdown>
-        + Thermal power was evaluated with the **hot side of the TEG on the skin** and the cold side on the passive radiator.
-        + In the outdoor scenario, measurements were made under direct sunlight.
-        + In the indoor scenario, the solar cell was exposed to high artificial illumination.
-    </p>
-</div>
-</section>
-</section>
-<section>
-    <section>
-        <h2>Framework for autonomous operations</h2>
-        <p data-markdown>
-            We need to describe the power production and consumption of an **energy harvesting system** and its load.
-
-            The power produced by the energy harvesting system is defined as $P(t)$ and is a $(\rho,\sigma_1, \sigma_2)$ function.
-        </p>
-    </section>
-    <section>
-        <h2>Framework for autonomous operations</h2>
-            <h3>$(\rho,\sigma_1, \sigma_2)$ function</h3>
-            <p>
-                A nonnegative, continuous and bounded function $P(t)$ is said to be a $(\rho,\sigma_1, \sigma_2)$ function if, and only if, for any value of finite positive real numbers $\tau$ and $T$, the following conditions are satisfied:
-            </p>
-            \[
-            \int_{\tau}^{\tau+T} {P(t)dt} \leq \rho T + \sigma_1
-            \]
-            \[
-            \int_{\tau}^{\tau+T} {P(t)dt} \geq \rho T - \sigma_2
-            \]
-    </section>
-    <section>
-        <h2>Framework for autonomous operations</h2>
-            <h3>Energy neutrality</h3>
-            <p>
-                In a system where the energy production is characterized as a $(\rho_1,\sigma_1,\sigma_2)$ function, the load consumption is characterized by a $(\rho_2,\sigma_3)$ function and the energy buffer can be described with $\eta$ for the storage efficiency and $\rho_{leak}$ for the leakage power, the energy neutrality is met if the system respect the following conditions:
-            </p>
-            \[
-            \rho_2 \leq  \eta\rho_1 -\rho_{leak}
-            \]
-            \[
-            B_0 \geq \eta \sigma_2 + \sigma_3
-            \]
-            \[
-            B \geq B_0
-            \]
-    </section>
-</section>
-
-<section>
-    <section>
-    <h2>Experiment 2: Long term monitoring of energy harvester</h2>
-    <div class="container">
-        <img class="col" src="./assets/long_term_measurement.png" alt="Blablabla"/>
-        <p class="col">
-            In this experiment, power production is recorded over time. The voltage and the current are sampled with an Arduino Nano and data are recorded on a μSD card.
-
-            Analysis of this signal was then conducted to characterize the power production.
-        </p>
-    </div>
-</section>
-<section>
-<h2>Experiment 2: Long term monitoring of energy harvester</h2>
-<h3>Results outdoor scenario</h3>
-    <img width=80% src="./assets/2020_06_04_1232_preprocessed_power.png" alt="Blablabla"/>
-</section>
-<!--
-<section>
-<h2>Experiment 2: Long term monitoring of energy harvester</h2>
-<h3>Results outdoor scenario</h3>
-<div class="container">
-    <p class="col" data-markdown>
-        | ff         | value      |
-        |------------|------------|
-        | $\rho$     | 0.0289 mW  |
-        | $\sigma_1$ | 822.502 mJ |
-        | $\sigma_2$ | 566.450 mJ |
-    </p>
-    <p class="col">
-
-    </p>
-</div>
-</section>
--->
-<section>
-<h2>Experiment 2: Long term monitoring of energy harvester</h2>
-<h3>Results indoor scenario</h3>
-    <img width=80% src="./assets/2020_06_15_2100_preprocessed_power.png" alt="Blablabla"/>
-</section>
-</section>
-<section>
-<section>
-    <h2>What comes next ?</h2>
+    <h2>What comes next?</h2>
     <h3>For supercapacitors development</h3>
     <ol>
         <li class="fragment fade-left">Proceed with the microfabrication of the devices in order to assess their feasibility and evaluate their characteristics.</li>
@@ -537,7 +531,7 @@
     </ol>
 </section>
 <section>
-    <h2>What comes next ?</h2>
+    <h2>What comes next?</h2>
     <h3>For autonomous sensor nodes</h3>
     <ol>
         <li class="fragment fade-left">Build a demonstration setup with monitoring of energy production and consumption.</li>
@@ -550,7 +544,7 @@
     <h2>Conclusion</h2>
     <p data-markdown>
         + Based on current state-of-the-art on supercapacitors and CNTs fabrication, new fabrication processes were elaborated and are currently carried out in the cleanroom.
-        + A framework to design supercapacitors for autonomous smart sensor nodes was developped with techniques to characterize energy harvesters and node power consumption in field conditions.
+        + A framework to design supercapacitors for autonomous smart sensor nodes was developed with techniques to characterize energy harvesters and node power consumption in field conditions.
     </p>
 </section>
 <section>
@@ -627,7 +621,7 @@ Reveal.configure({ showSlideNumber: 'speaker' });
 // displayed upon load, hides when slide changes
 Reveal.addEventListener('slidechanged', function(event) {
     document.querySelector('.reveal .footer').style.display = 'block';
-    document.querySelector('.reveal .header').style.display = 'block';
+    //document.querySelector('.reveal .header').style.display = 'block';
     document.querySelector('.reveal .footer .slide_number').innerHTML = String(event.indexh) + "." + String(event.indexv);
 });
 Reveal.addEventListener('hide-asides', function(event) {
