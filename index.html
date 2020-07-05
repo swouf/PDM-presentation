@@ -260,7 +260,7 @@
                         <h2>Process 1</h2>
                         <h3>Microfabrication</h3>
                         <div class="container">
-                            <img class="col fragment fade-right" width=800px src="./assets/Al<sub>2</sub>O<sub>3</sub>_1um_etch_bottom.JPG" alt="Blablabla"/>
+                            <img class="col fragment fade-right" width=800px src="./assets/Al2O3_1um_etch_bottom.JPG" alt="Blablabla"/>
                             <p style="margin-left: 12pt;" class="col fragment fade-left" data-markdown>
                                 + Steps 1 to 9 were conducted (no CNTs growth).
                                 + Sputtering is very slow and is a limiting factor for scalability.
@@ -342,10 +342,10 @@
                             <span class="fragment fade-left" data-fragment-index="2"><p class="fragment fade-out" data-fragment-index="3">Photolithography</p></span>
                             <span class="fragment fade-left" data-fragment-index="3"><p class="fragment fade-out" data-fragment-index="4">Si etching</p></span>
                             <span class="fragment fade-left" data-fragment-index="4"><p class="fragment fade-out" data-fragment-index="5">PR stripping</p></span>
-                            <span class="fragment fade-left" data-fragment-index="5"><p class="fragment fade-out" data-fragment-index="6">SiO 2 growth</p></span>
+                            <span class="fragment fade-left" data-fragment-index="5"><p class="fragment fade-out" data-fragment-index="6">SiO<sub>2</sub> growth</p></span>
                             <span class="fragment fade-left" data-fragment-index="6"><p class="fragment fade-out" data-fragment-index="7">TiN sputtering</p></span>
                             <span class="fragment fade-left" data-fragment-index="7"><p class="fragment fade-out" data-fragment-index="8">Fe deposition</p></span>
-                            <span class="fragment fade-left" data-fragment-index="8"><p class="fragment fade-out" data-fragment-index="9">Al 2 O 3 sputtering</p></span>
+                            <span class="fragment fade-left" data-fragment-index="8"><p class="fragment fade-out" data-fragment-index="9">Al<sub>2</sub>O<sub>3</sub> sputtering</p></span>
                             <span class="fragment fade-left" data-fragment-index="9"><p class="fragment fade-out" data-fragment-index="10">IBE and local redeposition</p></span>
                             <span class="fragment fade-left" data-fragment-index="10"><p class="fragment fade-out" data-fragment-index="11">PR coating</p></span>
                             <span class="fragment fade-left" data-fragment-index="11"><p class="fragment fade-out" data-fragment-index="12">Photolithography</p></span>
@@ -443,6 +443,45 @@
 </div>
 </section>
 </section>
+<section>
+    <section>
+        <h2>Framework for autonomous operations</h2>
+        <p data-markdown>
+            We need to describe the power production and consumption of an **energy harvesting system** and its load.
+
+            The power produced by the energy harvesting system is defined as $P(t)$ and is a $(\rho,\sigma_1, \sigma_2)$ function.
+        </p>
+    </section>
+    <section>
+        <h2>Framework for autonomous operations</h2>
+            <h3>$(\rho,\sigma_1, \sigma_2)$ function</h3>
+            <p>
+                A nonnegative, continuous and bounded function $P(t)$ is said to be a $(\rho,\sigma_1, \sigma_2)$ function if, and only if, for any value of finite positive real numbers $\tau$ and $T$, the following conditions are satisfied:
+            </p>
+            \[
+            \int_{\tau}^{\tau+T} {P(t)dt} \leq \rho T + \sigma_1
+            \]
+            \[
+            \int_{\tau}^{\tau+T} {P(t)dt} \geq \rho T - \sigma_2
+            \]
+    </section>
+    <section>
+        <h2>Framework for autonomous operations</h2>
+            <h3>Energy neutrality</h3>
+            <p>
+                In a system where the energy production is characterized as a $(\rho_1,\sigma_1,\sigma_2)$ function, the load consumption is characterized by a $(\rho_2,\sigma_3)$ function and the energy buffer can be described with $\eta$ for the storage efficiency and $\rho_{leak}$ for the leakage power, the energy neutrality is met if the system respect the following conditions:
+            </p>
+            \[
+            \rho_2 \leq  \eta\rho_1 -\rho_{leak}
+            \]
+            \[
+            B_0 \geq \eta \sigma_2 + \sigma_3
+            \]
+            \[
+            B \geq B_0
+            \]
+    </section>
+</section>
 
 <section>
     <section>
@@ -486,7 +525,37 @@
 </section>
 </section>
 <section>
+<section>
+    <h2>What comes next ?</h2>
+    <h3>For supercapacitors development</h3>
+    <ol>
+        <li class="fragment fade-left">Proceed with the microfabrication of the devices in order to assess their feasibility and evaluate their characteristics.</li>
+        <li class="fragment fade-left">Choose the fabrication process based on its characteristics and scalability.</li>
+        <li class="fragment fade-left">Optimize the process to achieve the best performances.</li>
+        <li class="fragment fade-left">Implement deposition of MnO<sub>2</sub> on the electrode to improve energy density.</li>
+        <li class="fragment fade-left">Package the device.</li>
+    </ol>
+</section>
+<section>
+    <h2>What comes next ?</h2>
+    <h3>For autonomous sensor nodes</h3>
+    <ol>
+        <li class="fragment fade-left">Build a demonstration setup with monitoring of energy production and consumption.</li>
+        <li class="fragment fade-left">Evaluate the efficiency of the harvester and find strategies to improve it.</li>
+        <li class="fragment fade-left">Evaluate the efficiency of sensor nodes at performing a given task and improve it by developing <strong>energy aware</strong> nodes.</li>
+    </ol>
+</section>
+</section>
+<section>
     <h2>Conclusion</h2>
+    <p data-markdown>
+        + Based on current state-of-the-art on supercapacitors and CNTs fabrication, new fabrication processes were elaborated and are currently carried out in the cleanroom.
+        + A framework to design supercapacitors for autonomous smart sensor nodes was developped with techniques to characterize energy harvesters and node power consumption in field conditions.
+    </p>
+</section>
+<section>
+    <h1>Thank you for your attention!</h1>
+    <p>Your questions are welcome.</p>
 </section>
 
 <div class='footer'>
