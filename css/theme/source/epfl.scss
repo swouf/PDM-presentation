@@ -66,8 +66,13 @@ $heading4Size: 1.0em;
   display: none;
 }
 
+.reveal section {
+  height: 100%;
+}
+
 .container{
     display: flex;
+    height: 80%;
 }
 .col{
     flex: 1;
