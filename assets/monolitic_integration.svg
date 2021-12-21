@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="745.19971"
+   height="365.74713"
+   viewBox="0 0 197.16743 96.770594"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="monolitic_integration.svg"
+   inkscape:export-filename="/home/swouf/EPFL/Cours/MA4/CNT_supercaps_IoT_sensing_nodes/report/assets/monolitic_integration.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1823"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1821"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1777"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path1775"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1569"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1567"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path1262"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1259"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-2.1342032 : 304.62778 : 1"
+       inkscape:vp_y="0 : 999.99996 : 0"
+       inkscape:vp_z="214.82137 : 320.05826 : 1"
+       inkscape:persp3d-origin="93.134815 : 96.314467 : 1"
+       id="perspective817" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="52.699525 : 259.22523 : 1"
+       inkscape:vp_y="0 : 264.58332 : 0"
+       inkscape:vp_z="110.10235 : 263.30787 : 1"
+       inkscape:persp3d-origin="77.90612 : 204.10899 : 1"
+       id="perspective817-3" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="62.001284 : 234.21384 : 1"
+       inkscape:vp_y="0 : 264.58332 : 0"
+       inkscape:vp_z="119.40411 : 238.29648 : 1"
+       inkscape:persp3d-origin="87.207876 : 179.0976 : 1"
+       id="perspective817-9" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="52.899117 : 303.53362 : 1"
+       inkscape:vp_y="0 : 1001.6546 : 0"
+       inkscape:vp_z="270.21367 : 318.98961 : 1"
+       inkscape:persp3d-origin="148.32576 : 94.875609 : 1"
+       id="perspective817-0" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="146.03477 : 212.2693 : 1"
+       inkscape:vp_y="0 : 264.58332 : 0"
+       inkscape:vp_z="203.43759 : 216.35194 : 1"
+       inkscape:persp3d-origin="171.24136 : 157.15306 : 1"
+       id="perspective817-2" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="27.350384 : 242.37888 : 1"
+       inkscape:vp_y="0 : 264.58332 : 0"
+       inkscape:vp_z="84.753213 : 246.46152 : 1"
+       inkscape:persp3d-origin="52.556978 : 187.26264 : 1"
+       id="perspective817-28" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="92.192989 : 212.85936 : 1"
+       inkscape:vp_y="0 : 264.58332 : 0"
+       inkscape:vp_z="149.59582 : 216.942 : 1"
+       inkscape:persp3d-origin="117.39958 : 157.74312 : 1"
+       id="perspective817-31" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="32.496713 : 276.33836 : 1"
+       inkscape:vp_y="0 : 951.29505 : 0"
+       inkscape:vp_z="238.88547 : 291.01731 : 1"
+       inkscape:persp3d-origin="123.12566 : 78.17093 : 1"
+       id="perspective817-36" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1823-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1821-9" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="647.25879"
+     inkscape:cy="135.09371"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.6535775,-111.93371)">
+    <rect
+       style="fill:#269327;fill-opacity:1;stroke:#495200;stroke-width:0.36672229;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815"
+       width="188.55673"
+       height="4.4453459"
+       x="11.435077"
+       y="164.03044" />
+    <rect
+       style="fill:#4b6fff;fill-opacity:1;stroke:#4952b0;stroke-width:0.28123975;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815-1"
+       width="110.89727"
+       height="4.4453459"
+       x="89.094521"
+       y="159.58511" />
+    <rect
+       style="fill:#ff375a;fill-opacity:1;stroke:#b9529b;stroke-width:0.28123975;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815-1-5"
+       width="110.89727"
+       height="4.4453459"
+       x="89.094521"
+       y="155.13977" />
+    <rect
+       style="fill:#ffaa2e;fill-opacity:1;stroke:#ff745f;stroke-width:0.28123975;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815-1-54"
+       width="110.89727"
+       height="4.4453459"
+       x="89.094521"
+       y="150.69443" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.826958"
+       y="191.47031"
+       id="text1177"><tspan
+         sodipodi:role="line"
+         id="tspan1175"
+         x="61.826958"
+         y="191.47031"
+         style="stroke-width:0.26458332">PCB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.245995"
+       y="186.99149"
+       id="text1177-7"><tspan
+         sodipodi:role="line"
+         id="tspan1175-6"
+         x="99.245995"
+         y="186.99149"
+         style="stroke-width:0.26458332">Microcontroller</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="14.323977"
+       y="139.2901"
+       id="text1237"><tspan
+         sodipodi:role="line"
+         id="tspan1235"
+         x="14.323977"
+         y="139.2901"
+         style="stroke-width:0.26458332">Supercapacitor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.8589315"
+       y="122.62039"
+       id="text1241"><tspan
+         sodipodi:role="line"
+         id="tspan1239"
+         x="9.8589315"
+         y="122.62039"
+         style="stroke-width:0.26458332">Transducer for harvesting energy</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1823)"
+       d="m 72.380013,182.68957 0.793814,-15.91418"
+       id="path1245"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1777)"
+       d="m 137.0459,178.1442 4.96093,-14.88281"
+       id="path1247"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1569)"
+       d="M 49.81608,141.14388 89.6888,157.20683"
+       id="path1249"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 94.464517,124.40071 26.251623,28.11198"
+       id="path1251"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#000019;fill-opacity:1;stroke:#4c355f;stroke-width:0.14974602;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815-1-54-5"
+       width="31.439671"
+       height="4.4453459"
+       x="53.453861"
+       y="159.32048" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.601779"
+       y="203.85706"
+       id="text1177-3"><tspan
+         sodipodi:role="line"
+         id="tspan1175-7"
+         x="7.601779"
+         y="203.85706"
+         style="stroke-width:0.26458332">Sensing element</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1823-6)"
+       d="m 48.556743,196.53794 9.563595,-33.30758"
+       id="path1245-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
